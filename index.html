@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/img/Sin título-1.ico">
+	<title>We Wear</title>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" >    
+<!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" >
+    <link rel="stylesheet" href="css/owl.theme.css" >
+    <link rel="stylesheet" href="css/owl.transitions.css" >
+<!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+<!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="css/color/green.css" title="green">
+    <link rel="stylesheet" type="text/css" href="css/color/light-red.css" title="light-red">
+    <link rel="stylesheet" type="text/css" href="css/color/blue.css" title="blue">
+    <link rel="stylesheet" type="text/css" href="css/color/light-blue.css" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="css/color/yellow.css" title="yellow">
+    <link rel="stylesheet" type="text/css" href="css/color/light-green.css" title="light-green">
+</head>
+
+<body class="index">
+<!-- COMIENZA SELECTOR DE COLORES-->
+    <div class="colors-switcher" style="right: -100px;"> <!--para que el color este oculto-->
+        <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>        
+        <ul class="colors-list">
+             <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
+             <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>
+             <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>
+             <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>    
+             <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>
+             <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>         
+        </ul>
+
+    </div>  
+<!-- TERMINA SELECTOR DE COLORES -->
+
+<!-- MENU  -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">we wear</a>
+                <a href="#page-top"><img src="images/img/mano minimizada.png" alt=""></a>
+
+                <a><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></a>  
+
+                <span id="botoncart" data-toggle="modal" data-target="#myModal"><a href="#myModal"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></span>
+
+
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#portfolio">Categorias</a></li>
+                    <li><a class="page-scroll" href="#about-us">Servicios</a></li>
+                    <li><a class="page-scroll" href="#trabajadores">Habilidades</a></li>
+                    <li><a class="page-scroll" href="#partner">Marcas</a></li>
+                    <li><a class="page-scroll" href="#contact">Contacto</a></li>
+                    <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>   
+              		<li id="botoncart" data-toggle="modal" data-target="#myModal"><a href="#myModal"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+
+
+
+
+
+<!-- #myModal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content" style=" color:#fff; background: #222;">
+                      <div class="modal-header">
+<!--cabecera-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">lista de compra</h4>
+                      </div>
+<!--cuerpo #myModal-->
+                      <div class="modal-body">
+                      <div>
+                          <table class="table" style="margin-bottom: 5px">
+                              <tbody>
+                                  <tr class="cart-product">
+                                      <td><img width="40" height="40" src="images/img/ropa/HOMBRE/Screenshot_1.jpg"></td>
+                                      <td>CAMISETA NEGRA</td>
+                                      <td><strong>Swag</strong></td>
+                                      <td>Bs 15.500°°</td>
+                                      <td>
+                                      <button class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span>-</button>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                       <div>
+                          <table class="table" style="margin-bottom: 5px">
+                              <tbody>
+                                  <tr class="cart-product">
+                                      <td><img width="40" height="40" src="images/img/ropa/MUJER/view (1).jpg"></td>
+                                      <td>SUDADERA CLÁSICA AZUL</td>
+                                      <td><strong>KEEP CALM</strong></td>
+                                      <td>Bs 20.000°°</td>
+                                      <td>
+                                      <button class="close" data-dismiss="modal" aria-label="close"><span aria-hidden="true">&times;</span>-</button>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+            
+                       <div class="table">
+                              <div class="pull-right">
+                                  <font class="total-box-label">
+                                     total:
+                                    <font class="total-bos-price">
+                                        <strong>35.500°°</strong>
+                                    </font>
+                                  </font>
+                              </div>
+                        </div>
+
+                        <table class="table-nr" style="margin-bottom: 0px">
+                            <tbody>
+                                <tr style="background-color: transparent;">
+                                    <td style="border-top: none;">
+                                        <span>&nbsp;</span>
+                                    </td>
+                                </tr>
+
+                                <tr style="background-color: transparent;">
+                                    <td style="border-top: none;">
+                                        <img src="images/carrito de compras/horizontal_solution_PPeCheck.gif" border="0" width="110" alt="">
+                                    </td>
+                                    <td style="border-top: none;">
+                                        <div class="pull-right">
+                                            <img src="images/carrito de compras/btn_xpressCheckout.gif" align="rigt" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+<!--pie de la ventana-->
+                      <div class="modal-footer">
+                       <button type="button" class="btn btn-default" data-dismiss="modal">continuar</button>
+                       <botton type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2"><a href="#myModal2">comprar todo</a></li>
+<!--#myModal2-->
+                      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+ <!--cabecera-->
+                        <div class="modal-header" style="background: red; color: #fff;">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                           <h4 class="modal-title" id="myModalLabel">error</h4>
+                         </div>
+                         <div class="modal-body">
+<!--cuerpo #myModal2-->
+                         <div>
+                              <strong>LAMENTABLEMENTE ESTAMOS SOLUCIONANDO EL PROBLEMA<br> por favor espere</strong>
+                              <br>
+                              <img  width="40" height="40" src="images/carrito de compras/wait18trans.gif" alt="">
+                          </div>
+                          </div>
+<!--pie de la ventana-->             
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- COMIENZA ENTORNO DE SLIDER-->
+    <section id="page-top">
+<!-- COMIENZA SLIDER -->
+        <div id="main-slide" class="carousel slide" data-ride="carousel">
+<!-- INDICADORES -->
+            <ol class="carousel-indicators">
+                <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slide" data-slide-to="1"></li>
+                <li data-target="#main-slide" data-slide-to="2"></li>
+            </ol>
+
+        <div class="carousel-inner">
+           <div class="item active">
+               <img class="img-responsive" src="images/header-bg-1.jpg" alt="slider">
+               <div class="slider-content">
+                   <div class="col-md-12 text-center">
+                       <h1 class="animated1">
+                                <span>NOVEDADES EN <strong>MUJERES</strong></span>
+                       </h1>
+                       <p class="animated2">camisetas especiales<br>franelillas - blusas - sudaderas - vestidos</p>   
+                       <a href="producto-mujer.html" class="page-scroll btn btn-primary animated3">visitar</a>
+                   </div>
+                </div>
+            </div>
+                
+            <div class="item">
+                <img class="img-responsive" src="images/header-back.png" alt="slider">
+               
+                <div class="slider-content">
+                    <div class="col-md-12 text-center">
+                        <h1 class="animated1">
+                          <span>NOVEDADES EN <strong>Hombres</strong></span>
+                        </h1>
+                        <p class="animated2">camisetas especiales<br>franelillas - sudaderas</p>
+                        <a href="producto-hombre.html" class="page-scroll btn btn-primary animated3">visitar</a>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="item">
+                <img class="img-responsive" src="images//galaxy.jpg" alt="slider">
+                <div class="slider-content">
+                    <div class="col-md-12 text-center">
+                        <h1 class="animated1">
+                            <span>NOVEDADES EN <strong>NIÑOS</strong></span>
+                        </h1>
+                        <p class="animated2">camisetas especiales<br>franelillas - sudaderas - bodys</p>
+                        <a href="producto-niños.html" class="page-scroll btn btn-primary animated3">visitar</a>
+                            
+                 	</div>
+             	</div>
+         	</div>
+     	</div>
+
+<!-- CONTROLES DEL SLIDER -->
+        <a class="left carousel-control" href="#main-slide" data-slide="prev">
+            <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#main-slide" data-slide="next">
+            <span><i class="fa fa-angle-right"></i></span>
+        </a>
+        </div>
+    </section>
+<!-- FINALIZA ENTORNO DE SLIDER -->
+
+    
+<!-- COMIENZA LISTA DE CATEGORIAS -->
+    <section id="portfolio" class="portfolio-section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h3>CATEGORIAS DE NUESTRAS PRENDAS</h3>
+                        <p>diseños personalizados para toda la familia</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 "> 
+<!-- COMIENZA PORTAFOLIO ITEM O INF DE CATEGORIA-->
+                    <ul id="portfolio-list">
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="images/img/ropa/view (2).jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Catalogo de Mujer</h4>
+                                    <a href="producto-mujer.html"  class="link-2"><i class="glyphicon glyphicon-play"></i></a> 
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="images/img/ropa/view (4).jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Catalogo de Niños</h4>
+                                    <a href="producto-niños.html" class="link-2"><i class="glyphicon glyphicon-play"></i></a>                                        
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="portfolio-item">
+                                <img src="images/img/ropa/view.jpg" class="img-responsive" alt="" />
+                                <div class="portfolio-caption">
+                                    <h4>Catalogo de Hombre</h4>
+                                    <a href="producto-hombre.html"  class="link-2"><i class="glyphicon glyphicon-play"></i></a> 
+
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+<!-- TERMINA PORTAFOLIO ITEM O INF DE CATEGORIA-->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- TERMINA LISTA DE CATEGORIAS -->
+
+<!-- COMIENZA SERVICIOS QUE OFRECEMOS -->
+    <section id="about-us" class="about-us-section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title text-center">
+                            <h3>NUESTROS SERVICIOS</h3>
+                            <p>lo que necesites__<strong>WE WEAR</strong>__lo tiene para tí</p>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="welcome-section text-center">
+                        <img src="images/servicios/diseño grafico.png" class="img-responsive">
+                        <h4>Diseño Gráfico</h4>
+                        <div class="border"></div>
+                        <p>El diseño gráfico, en todas sus formas, influye muchisimo sobre su cliente a la hora de elegir o no su producto. Por ejemplo iuna identidad antigua, un folleto que no comunica correctamente, un banner no "atrae" la atención, etc. Por eso nos especializamos en diseñar: flyers, banners, diseño editorial.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="welcome-section text-center">
+                        <img src="images/servicios/programacion.png" class="img-responsive">
+                        <h4>Servicio de Programación</h4>
+                        <div class="border"></div>
+                        <p>Somos especialistas en la creación de aplicaciones web a medida y los sistemas de gestion contable. Poseemos amplia esperiencia en el desarrollo de interfaces y desarrollo de sistemas. Consideramos la usabilidad, funcionalida y accesibilidad como caracteristicas escenciales.</p>
+                    </div>
+                </div>
+                 
+                
+                <div class="col-md-3">
+                    <div class="welcome-section text-center">
+                        <img src="images/servicios/diseño web.png" class="img-responsive" alt="..">
+                        <h4>Diseño Web</h4>
+                        <div class="border"></div>
+                        <p>Como diseñadores de sitipos webs consideramos todos los factores que inciden directa y favorablemente en los usuarios. Estamos conscientes de lo importante que es la imagen de su empresa o proyecto. Pero por sobre todo, sabemos que buscan y necesitan a los usuarios.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="welcome-section text-center">
+                        <img src="images/servicios/20150730label_icon55ba3bc110be7-s1.png" class="img-responsive" alt="..">
+                        <h4>Sublimados</h4>
+                        <div class="border"></div>
+                        <p>Contamos con las mejores maquinas y la materia prima de mayor calidad en el mercado, pensando en el producto terminado que llevara consigo el cliente, esta sublimación no es tóxica ya que cualquier persona lo podría llevar en sus camisetas, además que se cuentan con variedad de estilos y personalización.</p>
+                    </div>
+                </div>
+                
+            </div><!-- /.row -->            
+            
+        </div><!-- /.container -->
+    </section>
+<!-- TERMINA SERVICIOS QUE OFRECEMOS -->
+
+
+<!-- COMIENZA PUNTOS ALTOS DE NUESTRO TRABAJO -->
+    <div id="trabajadores" class="about-us-section-2">
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-6">
+                    <div class="skill-shortcode">
+                        <div class="skill">
+                            <p>Diseño Web</p>          
+                            <div class="progress">         
+                                <div class="progress-bar" role="progressbar"  data-percentage="60">
+                                    <span class="progress-bar-span" >60%</span>
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="skill">
+                            <p>HTML & CSS</p>          
+                            <div class="progress">         
+                                <div class="progress-bar" role="progressbar"  data-percentage="95">
+                                    <span class="progress-bar-span" >95%</span>
+                                    <span class="sr-only">95% Complete</span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="skill">
+                            <p>Bootstrap</p>          
+                            <div class="progress">         
+                                <div class="progress-bar" role="progressbar"  data-percentage="80">
+                                    <span class="progress-bar-span" >80%</span>
+                                    <span class="sr-only">80% Complete</span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="skill">
+                            <p>Diseño Digital</p>          
+                            <div class="progress">         
+                                <div class="progress-bar" role="progressbar"  data-percentage="100">
+                                    <span class="progress-bar-span" >100%</span>
+                                    <span class="sr-only">100% Complete</span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="skill">
+                            <p>Sublimación</p>          
+                            <div class="progress">         
+                                <div class="progress-bar" role="progressbar"  data-percentage="70">
+                                    <span class="progress-bar-span" >70%</span>
+                                    <span class="sr-only">70% Complete</span>
+                                </div>
+                            </div>  
+                        </div>                                    
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+<!-- TERMINA PUNTOS ALTOS DE NUESTRO TRABAJO -->
+
+<!--COMIENZA PATROCINANTES-->
+    <section id="partner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-12">
+                    <div class="section-title text-center">
+                        <h3>Marcas Patrocinantes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="clients">
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/themeforest.jpg" class="img-responsive" alt=""> </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/creative-market.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/designmodo.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/creative-market.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/microlancer.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/themeforest.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/microlancer.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/designmodo.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/creative-market.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <img src="images/logos/designmodo.jpg" class="img-responsive" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- /TERMINA PATROCINANTES-->    
+      
+<!--footer-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3>Contácta Con Nosotros</h3>
+                        <p class="white-text">siempre estaremos a la orden</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Tu Nombre" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Tu Apellido" id="lastname" required data-validation-required-message="Por favor ingrese su apellido.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Tu Correo electrónico*" id="email" required data-validation-required-message="Por favor colocar tu correo electrónico.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Tu Telefono *" id="phone" required data-validation-required-message="Por favor ingrese tu numero telefónico.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Tu Mensaje *" id="message" required data-validation-required-message="ingresa un mensaje descriptivo."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-primary">enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-contact-info">
+                        <h4>Para más Informacion</h4>
+                        <h6>contáctenos</h6>
+                        <ul>
+                            <li><strong>E-mail :</strong> we-wear-design@mail.com</li>
+                            <li><strong>Phone :</strong> +581234567</li>
+                            <li><strong>Mobile :</strong> 0271-1234567</li>
+                            <li><strong>Web :</strong> <a href="index.html">www.wewear.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="footer-contact-info">
+                        <h4>Horario de Trabajo</h4>
+                        <ul>
+                            <li><strong>lunes-Viernes :</strong> 9 am a 5 pm</li>
+                            <li><strong>Sábados :</strong> 9 am a 3 pm</li>
+                            <li><strong>Domingos :</strong>Cerrado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="style-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <span class="copyright">Copyright &copy; <a href="index.html">We Wear</a> 2017</span>
+                        <br>
+                        <span>________</span><img src="images/img/mano minimizada.png" alt=""> <span>_________</span>
+
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="footer-social text-center">
+                            <ul>
+                                <li><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="footer-link">
+                            <ul class="pull-right">
+                                <li><a href="index.html">Subir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <div id="loader">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+
+    
+
+<!-- jQuery Version 2.1.1 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+<!-- Bootstrap JavaScript -->
+    <script src="asset/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/count-to.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/styleswitcher.js"></script>
+<!-- formulario de contacto JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+<!-- Custom Theme JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
